@@ -1,0 +1,9 @@
+nums=[1,2]
+r_k=7
+l=len(nums)
+k=r_k%l
+first=nums[l-k:l]
+second=nums[:l-k]
+nums[:k]=first
+nums[k:]=second
+print(nums)
